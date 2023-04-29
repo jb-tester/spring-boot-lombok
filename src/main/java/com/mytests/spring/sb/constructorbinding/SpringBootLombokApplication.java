@@ -8,7 +8,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-@EnableConfigurationProperties({MyConfigProps.class,MyConfigPropsWithLombok.class})
+@EnableConfigurationProperties({MyConfigProps.class, ConstructorBindingConfigPropsWithLombok.class, GetterSetterConfigPropsWithLombok.class})
 public class SpringBootLombokApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
@@ -21,7 +21,8 @@ public class SpringBootLombokApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         System.out.println("**********************************");
         System.out.println(ctx.getBean(MyConfigProps.class).getProps());
-        System.out.println(ctx.getBean(MyConfigPropsWithLombok.class).getProps());
+        System.out.println(ctx.getBean(ConstructorBindingConfigPropsWithLombok.class).getProps());
+        System.out.println(ctx.getBean(GetterSetterConfigPropsWithLombok.class).getStr());
         System.out.println(ctx.getBean(ValueLombok.class));
         System.out.println("**********************************");
     }

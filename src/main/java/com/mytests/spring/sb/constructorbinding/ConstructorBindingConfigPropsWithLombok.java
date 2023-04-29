@@ -14,7 +14,8 @@ import org.springframework.boot.context.properties.ConstructorBinding;
 @ConfigurationProperties("dummy.buzz")
 @ConstructorBinding
 @Data
-public class MyConfigPropsWithLombok {
+public class ConstructorBindingConfigPropsWithLombok {
+
     @NonNull private String str;
    
     public String getProps(){
