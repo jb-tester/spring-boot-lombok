@@ -22,6 +22,7 @@ public class SpringBootLombokApplication implements CommandLineRunner {
         System.out.println("**********************************");
         System.out.println(ctx.getBean(MyConfigProps.class).getProps());
         System.out.println(ctx.getBean(MyConfigPropsWithLombok.class).getProps());
+        System.out.println(ctx.getBean(ValueLombok.class));
         System.out.println("**********************************");
     }
 }
