@@ -1,7 +1,6 @@
 package com.mytests.spring.sb.constructorbinding;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.ConstructorBinding;
 
 /**
  * *
@@ -10,7 +9,7 @@ import org.springframework.boot.context.properties.ConstructorBinding;
  * *
  */
 @ConfigurationProperties("foo.bar")
-@ConstructorBinding
+//@ConstructorBinding
 public class MyConfigProps {
      String str1;
      String str2;

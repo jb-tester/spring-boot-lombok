@@ -11,10 +11,14 @@ import org.springframework.context.ApplicationContext;
 @EnableConfigurationProperties({MyConfigProps.class, ConstructorBindingConfigPropsWithLombok.class, GetterSetterConfigPropsWithLombok.class})
 public class SpringBootLombokApplication implements CommandLineRunner {
 
+    public SpringBootLombokApplication(ApplicationContext ctx) {
+        this.ctx = ctx;
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(SpringBootLombokApplication.class, args);
     }
-     @Autowired
+     final
      ApplicationContext ctx;
     
     @Override
