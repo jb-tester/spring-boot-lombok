@@ -10,6 +10,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Setter
 public class GetterSetterConfigPropsWithLombok {
 
+    /**
+     * 'str' doc: getter+setter, lombok.
+     */
     @NonNull
     private String str;
 

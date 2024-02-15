@@ -15,6 +15,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Data
 public class ConstructorBindingConfigPropsWithLombok {
 
+    /**
+     * 'str' doc: constructorBinding, lombok.
+     */
     @NonNull private String str;
    
     public String getProps(){

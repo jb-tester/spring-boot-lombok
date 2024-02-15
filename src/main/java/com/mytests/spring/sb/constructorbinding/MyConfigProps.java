@@ -11,14 +11,27 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties("foo.bar")
 //@ConstructorBinding
 public class MyConfigProps {
+
+    /**
+     * 'str1' doc: constructorBinding, no lombok.
+     */
      String str1;
-     String str2;
+    /**
+     * 'str2'doc: constructorBinding, no lombok.
+     */
+     String str2 ;
+
+    /**
+     * @param str1 - first prop
+     * @param str2 - second prop
+     */
     public MyConfigProps(String str1, String str2) {
         this.str1 = str1;
         this.str2 = str2;
     }
     
     public String getProps() {
+
         return str1+" "+str2;
     }
 }
