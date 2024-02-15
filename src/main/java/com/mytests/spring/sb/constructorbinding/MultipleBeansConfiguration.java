@@ -22,4 +22,9 @@ public class MultipleBeansConfiguration {
     public Bean1 b13() {
         return new Bean1("b13");
     }
+
+    @Bean
+    public Bean2 someBean2() {
+        return new Bean2("b2");
+    }
 }
