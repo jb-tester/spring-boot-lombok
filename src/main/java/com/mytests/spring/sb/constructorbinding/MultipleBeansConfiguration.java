@@ -10,15 +10,15 @@ import org.springframework.context.annotation.Configuration;
 public class MultipleBeansConfiguration {
 
 
-    @Bean("b11") //@Qualifier("b11")
+    @Bean("someBean11") //@Qualifier("b11")
     public Bean1 b11() {
         return new Bean1("b11");
     }
-    @Bean("b12") //@Qualifier("b12")
+    @Bean("someBean12") //@Qualifier("b12")
     public Bean1 b12() {
         return new Bean1("b12");
     }
-    @Bean("b13") //@Qualifier("b13")
+    @Bean("someBean13") //@Qualifier("b13")
     public Bean1 b13() {
         return new Bean1("b13");
     }
